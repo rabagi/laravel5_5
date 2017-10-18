@@ -26,3 +26,9 @@ Route::get('email', function(){
 Route::get('mail', function(){
 	return new \App\Mail\welcomeUser('GRB');
 });
+
+route::get('profile', function(){
+
+	return factory(App\UserProfile::class)->create();
+
+});
